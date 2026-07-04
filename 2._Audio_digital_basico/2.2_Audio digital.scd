@@ -1,4 +1,5 @@
-/* Una onda sonora puede grabarse en una cinta magnética para reproducirse posteriormente usando electromagnetismo. Esta es una forma de registro analógico.
+/*
+Una onda sonora puede grabarse en una cinta magnética para reproducirse posteriormente usando electromagnetismo. Esta es una forma de registro analógico.
 
 Analógica(o):
 adj. Dicho de un aparato o de un sistema: Que presenta información, especialmente una medida, mediante una magnitud física continua proporcional al valor de dicha información.
@@ -36,7 +37,7 @@ Debido a la dificultad de las computadoras para representar números de punto fl
 A mayor cantidad de bits, mayor es el rango dinámico que un sistema de audio digital puede representar.
 */
 
-(PathName.new(thisProcess.nowExecutingPath).parentPath +/+ "media/bitDepth.png").openOS;
+(PathName.new(thisProcess.nowExecutingPath).parentPath +/+ "media/bitRate.png").openOS;
 
 /*
 Este parámetro se conoce como profundidad de bits y también define los decibeles máximos que puede representar un registro de audio digital. Esto se calcula con la fórmula:
@@ -45,3 +46,6 @@ decibeles máximos = número de bits * 6.11
 
 SuperCollider trabaja por defecto en 32 bits y esto no puede modificarse. La profundidad de bits real de reproducción de audio estará dictada por la configuración del driver de audio de nuestra computadora.
 */
+
+//Tutorial anterior
+(PathName.new(thisProcess.nowExecutingPath).parentPath+/+"2.1_Sonido.scd").openOS;

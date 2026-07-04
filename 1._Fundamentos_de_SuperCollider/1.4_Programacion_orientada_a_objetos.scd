@@ -27,7 +27,5 @@ Clase.método(argumento 1,argumento 2, argumento 3);
 
 {SinOsc.ar(440,0,0.5,0)}.scope();
 
-
-
 //Más sobre programación orientada a objetos
 "https://www.luisllamas.es/curso-programacion-orientada-objetos/".openOS;

@@ -18,7 +18,7 @@ Esto se hace con shift + enter
 "con shift + enter".postln;
 "BIEN HECHO";
 
-//2. Evaluar una linea seleccionada o un bloque de código entre paréntesis. Esto se hace con ctrl (o cmd) + enter.
+//2. Evaluar una linea o un bloque de código entre paréntesis. Esto se hace con ctrl (o cmd) + enter.
 
 "Selecciona esta linea y ejecútala con ctrl + enter";"BIEN HECHO";
 
@@ -32,8 +32,8 @@ Esto se hace con shift + enter
 
 
 //Siguiente tutorial
-"1.3.2 Hacer comentarios.scd".openOS;
+(PathName.new(thisProcess.nowExecutingPath).parentPath+/+"1.3.2_Hacer_comentarios.scd").openOS;
 
 //Tutorial anterior:
-"1.3 Acciones básicas.scd".openOS;
+(PathName.new(thisProcess.nowExecutingPath).parentPath+/+"1.3_Acciones_basicas.scd").openOS;
 

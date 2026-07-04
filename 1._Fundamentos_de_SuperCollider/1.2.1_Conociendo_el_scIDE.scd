@@ -13,7 +13,7 @@ img = Image.open(thisProcess.nowExecutingPath.dirname +/+ "/media/IDE.png");
 UserView(ventana,ventana.view.bounds).drawFunc_({img.drawInRect(Rect(0, 0, 1151, 711)) });
 
 ventana.front;
-)
+);
 
 /*
 Como se puede observar en la imágen, scIDE se compone de:
@@ -65,7 +65,7 @@ Estos últimos tres elementos (lista de documentos, navegador de ayuda y ventana
 */
 
 //Para ir al siguiente tutorial, ejecuta la siguiente línea de código:
-"1.3 Acciones básicas.scd".openOS;
+(PathName.new(thisProcess.nowExecutingPath).parentPath+/+"1.3_Acciones_basicas.scd").openOS;
 
 //Para ir al tutorial anterior, ejecuta la siguiente línea de código:
-"1.2 Arquitectura de SuperCollider.scd".openOS;
+(PathName.new(thisProcess.nowExecutingPath).parentPath+/+"1.2_Arquitectura_de_supercollider.scd").openOS;

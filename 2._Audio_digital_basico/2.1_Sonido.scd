@@ -19,25 +19,22 @@ El sonido resulta de la perturbación mecánica de un objeto en un medio elásti
 (thisProcess.nowExecutingPath.dirname +/+ "media/escucha.gif").openOS;
 
 //Si la presión varía deacuerdo a un patrón repetitivo, hablamos de una forma de onda periódica.
-{SinOsc.ar(220,mul: 0.3)}.scope;
+{SinOsc.ar(220,mul: 0.3)}.plot(0.03);
 
 //Si no hay un patrón discernible, hablamos de ruido.
-{WhiteNoise.ar(0.2)}.scope;
+{WhiteNoise.ar(0.2)}.plot(0.03);
 
 //Enmedio de estos extremos existe un inmenso expectro de sonidos casi periódicos/ruidosos.
 
 //Un ciclo perteneciente a una forma de onda periódica es llamada periodo.
 (thisProcess.nowExecutingPath.dirname +/+ "media/periodo.png").openOS;
 
-//El número de periodos por segundo definen su frecuencia fundamental, la cual define la percepción de altura de un sonido (que tan grave o agudo es). Los ciclos por segundo se miden en Hertz (1Hz = 1 ciclo por segundo)
-
-{SinOsc.ar(freq: 100)}.plot(0.1);
-{SinOsc.ar(freq: 400)}.plot(0.1);
-
-{[SinOsc.ar(freq: 100),SinOsc.ar(freq: 400)]}.plot(0.1).superpose_(true).plotColor_([Color.red,Color.blue]);
+//El número de periodos por segundo definen la percepción de altura de un sonido (que tan grave o agudo es). Los ciclos por segundo se miden en Hertz (1Hz = 1 ciclo por segundo). A mayor cantidad de hz, más agudo será un sonido y viceversa. n
 
 {SinOsc.ar(100)}.scope;
 {SinOsc.ar(400)}.scope;
+
+//IMPORTANTE: Ctrl +  . es el atajo de teclado que detiene todos los procesos de supercollider en el servidor. Es nuestra red de seguridad para detener el sonido si llega a necesitarse.
 
 //La mayoría de los objetos que producen sonido en SC reciben como argumento frecuencia en Hz. Si queremos trabajar con notas o números MIDI, es posible convertir estos parámetros a frecuencia con los siguientes métodos:
 
@@ -55,9 +52,6 @@ El sonido resulta de la perturbación mecánica de un objeto en un medio elásti
 
 (thisProcess.nowExecutingPath.dirname +/+ "media/periodo.png").openOS;
 
-{SinOsc.ar(mul: 0.1)}.plot(0.1,minval: -1,maxval: 1);
-{SinOsc.ar(mul: 0.99)}.plot(0.1);
-
 {[SinOsc.ar(mul:0.1),SinOsc.ar(mul:0.99)]}.plot(0.1).superpose_(true).plotColor_([Color.red,Color.blue]);
 
 {SinOsc.ar(mul: 0.1)}.scope;
@@ -68,6 +62,8 @@ El sonido resulta de la perturbación mecánica de un objeto en un medio elásti
 0.5.ampdb;
 -6.0205999132796.dbamp;
 
+{SinOsc.ar(mul: -6.0205999132796.dbamp)!2}.scope;
+
 //Se puede monitorear la amplitud general de entradas y salidas de SC con:
 s.meter;
 
@@ -76,6 +72,8 @@ s.meter;
 {SinOsc.ar(phase:0)}.plot(0.01);
 
 (thisProcess.nowExecutingPath.dirname +/+ "media/fase-rad.png").openOS; //Tabla guía de fase a radianes
+
+{SinOsc.ar(phase: pi/2)}.plot(0.01);
 
 //SC sólo admite radianes como valores de fase. Sin embargo, pueden utilizarse grados convertidos a radianes con el siguiente método:
 
@@ -89,5 +87,5 @@ https://www.flippingphysics.com/sound.html
 https://jvaraujo.art/programacioncreativa/capitulo-7/06-generar-sonidos/
 */
 
-//Para ir al siguiente tutorial ejecuta la siguiente línea de código
-(PathName.new(thisProcess.nowExecutingPath).parentPath+/+"2.2 Audio digital.scd").openOS;
+//Siguiente tutorial
+(PathName.new(thisProcess.nowExecutingPath).parentPath+/+"2.2_Audio digital.scd").openOS;

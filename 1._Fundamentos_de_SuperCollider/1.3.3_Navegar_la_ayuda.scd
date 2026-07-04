@@ -14,3 +14,10 @@ En la barra superior de la documentación, podemos eleguir navegarla por medio d
 
 La documentación de SuperCollider no sólo contiene ayuda, también tutoriales e incluso ejemplos. Siempre es una buena idea dedicar tiempo a explorarla.
 */
+
+
+//Siguiente tutorial
+(PathName.new(thisProcess.nowExecutingPath).parentPath+/+"1.4_Programacion_orientada_a_objetos.scd").openOS;
+
+//Tutorial anterior
+(PathName.new(thisProcess.nowExecutingPath).parentPath+/+"1.3.2_Hacer_comentarios.scd").openOS;

@@ -48,13 +48,11 @@ Algunos links de utilidad son:
 //Repositorio con el código fuente de SC:
 "https://github.com/supercollider/supercollider".openOS;
 
-
+//Asesorias del CMM (sobre este y otros temas)
+"https://cmm.cenart.gob.mx/asesorias.php".openOS;
 
 
 
 //Para ir al siguiente tutorial, ejecuta la siguiente línea de código
-"1.2 Arquitectura de SuperCollider.scd".openOS;
-
-//o la siguiente.
-(PathName.new(thisProcess.nowExecutingPath).parentPath+/+"1.2_arquitectura_de_supercollider.scd").openOS;
+(PathName.new(thisProcess.nowExecutingPath).parentPath+/+"1.2_Arquitectura_de_supercollider.scd").openOS;
 
