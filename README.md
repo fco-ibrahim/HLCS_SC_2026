@@ -17,13 +17,13 @@
 * Frecuencia de muestreo 
 * Profundidad de bits
 
+#### Descanso
+
 #### UGens y funciones
 * UGens
 * UGens básicos de producción de sonido
 * Funciones
 * Argumentos y variables
-
-#### Descanso
 
 #### Eventos en el tiempo
 * Relojes
