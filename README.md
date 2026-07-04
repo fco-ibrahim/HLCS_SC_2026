@@ -31,8 +31,7 @@
 * Loop
 
 #### Ejercicios prácticos
-* Ejercicio de composición colectiva: “En Do” u otra canción simple.
-* Ejercicios en equipos e improvisación.
+* Ejercicio de composición colectiva / “En Do” u otra canción simple / Ejercicios en equipos e improvisación.
 * Ejercicios individuales de composición.
 
 ## Día 2
